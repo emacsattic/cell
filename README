@@ -1,0 +1,13 @@
+This is the README file for cell-mode, an abstract spreadsheet display
+engine for GNU Emacs. It's been through many versions, but is
+currently in alpha release.
+
+Files in this distribution: 
+
+ cell.el      The source code for cell-mode. 
+              Place this in your load-path and do (require 'cell)
+ grid.el      The underlying grid representation, separated out as a library.
+
+ COPYING      GNU General Public License Version 3 text.
+ README       The file you are reading.
+               

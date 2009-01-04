@@ -1,11 +1,11 @@
 ;;; cell.el --- abstract spreadsheet display engine for GNU Emacs
 
-;; Copyright (C) 2006, 2007  David O'Toole
+;; Copyright (C) 2006, 2007, 2008, 2009  David O'Toole
 
 ;; Author: David O'Toole <dto@gnu.org>
 ;; Keywords: hypermedia, tools, lisp
 ;; Package-Version: 1.9
-;; Time-stamp: <2009-01-04 07:11:56 dto>
+;; Time-stamp: <2009-01-04 07:30:53 dto>
 ;; Website: http://dto.github.com/
 
 ;; This file is free software; you can redistribute it and/or modify
