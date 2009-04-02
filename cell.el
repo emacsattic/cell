@@ -5,7 +5,7 @@
 ;; Author: David O'Toole <dto@gnu.org>
 ;; Keywords: hypermedia, tools, lisp
 ;; Package-Version: 1.9
-;; Time-stamp: <2009-01-04 07:30:53 dto>
+;; Time-stamp: <2009-01-04 08:07:11 dto>
 ;; Website: http://dto.github.com/
 
 ;; This file is free software; you can redistribute it and/or modify
@@ -21,7 +21,6 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with GNU Emacs; see the file COPYING.  If not, write to
 ;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-
 ;; Boston, MA 02110-1301, USA.
 
 ;; This file is NOT part of GNU Emacs.
@@ -34,11 +33,15 @@
 ;; A cell is a data-containing object in a spreadsheet. 
 
 (defstruct cell
-  value ;; The Lisp value (or Eon object) contained in the spreadsheet cell.
+  data ;; The Lisp value contained in the spreadsheet cell.
+  update-function ;; A function to be applied to the data whenever an update is required.
+  action-function ;; Single argument function accepts an action keyword.
+  dependencies ;; list of cell references (not implemented)
   label ;; A string (possibly with text properties) to be displayed.
   width ;; When non-nil, this is the floating-point width (in character widths.)
-  tag);; An optional function that may be used to change the
-      ;; presentation of the value.
+  tags ;; 
+  )
+
 
 ;;; Drawing cells into a buffer
 
